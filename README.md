@@ -1,5 +1,5 @@
 # libft
-The aim of this project is to code a C library with my own implementations of [C standard library](https://en.wikipedia.org/wiki/C_standard_library) functions including other useful ones. And continue to expand it in the future. I already added another project called [get_next_line](https://github.com/PenaXYZ/gnl) to it.
+The aim of this project is to code a C library with my own implementations of [C standard library](https://en.wikipedia.org/wiki/C_standard_library) functions including other useful ones. And continue to expand it in the future. I already added another project called [get_next_line](https://github.com/PenaXYZ/get_next_line) to it.
 
 Only following libc functions are allowed: [malloc(3)](https://linux.die.net/man/3/malloc), [free(3)](https://linux.die.net/man/3/free) and [write(3)](https://linux.die.net/man/3/write)
 
