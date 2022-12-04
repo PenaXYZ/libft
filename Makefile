@@ -88,10 +88,6 @@ $(NAME): $(OBJS)
 
 dir:
 	@mkdir -p $(OBJ_DIR)
-
-so: $(OBJS)
-	@$(CC) -fPIC -c $(CFLAGS) $(SRCS) $(INCLUDES)
-
 clean:
 	@/bin/rm -rf $(OBJ_DIR)
 
