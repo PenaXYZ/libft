@@ -3,7 +3,7 @@ CC := gcc
 CFLAGS := -c -Wall -Wextra -Werror
 SRC_DIR := src/
 OBJ_DIR := bin/
-INCLUDES := -I./includes
+INCLUDES := -I./include
 
 SRCS =	ft_abs.c \
 		ft_atoi.c \
