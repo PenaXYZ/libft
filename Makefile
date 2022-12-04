@@ -81,24 +81,22 @@ OBJS = $(addprefix $(OBJ_DIR),$(SRCS:.c=.o))
 all: $(NAME)
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c | dir
-	$(CC) $(CFLAGS) $(INCLUDES) $< -o $@
+	@$(CC) $(CFLAGS) $(INCLUDES) $< -o $@
 
 $(NAME): $(OBJS)
-	ar rcs $@ $^
+	@ar rcs $@ $^
 
 dir:
 	@mkdir -p $(OBJ_DIR)
 
 so: $(OBJS)
-	$(CC) -fPIC -c $(CFLAGS) $(SRCS) $(INCLUDES)
-	gcc -shared -o libft.so $(OBJS)
+	@$(CC) -fPIC -c $(CFLAGS) $(SRCS) $(INCLUDES)
 
 clean:
-	/bin/rm -rf $(OBJ_DIR)
+	@/bin/rm -rf $(OBJ_DIR)
 
 fclean: clean
-	/bin/rm -f $(NAME)
-	/bin/rm -f libft.so
+	@/bin/rm -f $(NAME)
 
 re: fclean all
 
